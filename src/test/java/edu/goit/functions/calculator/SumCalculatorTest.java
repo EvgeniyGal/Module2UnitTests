@@ -1,6 +1,5 @@
 package edu.goit.functions.calculator;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -18,14 +17,14 @@ class SumCalculatorTest {
 
 
     @Test
-    void sumTestOne() {
+    void sumTestOne() throws IllegalAccessException {
         int expected = 1;
         int actual = sumCalculator.sum(1);
         assertEquals(expected,actual);
     }
 
     @Test
-    void sumTestThree() {
+    void sumTestThree() throws IllegalAccessException {
         int expected = 6;
         int actual = sumCalculator.sum(3);
         assertEquals(expected,actual);
